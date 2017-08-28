@@ -12,5 +12,5 @@ app.get('/divide/', function (req, res) {
 })
 
 app.listen(3003, function () {
-  console.log('Dividion service listening on port 3003!')
+  console.log('Division service listening on port 3003!')
 })
