@@ -7,8 +7,8 @@ app.get('/divide/', function (req, res) {
     var num1 = array[0];
     var num2 = array[1];
     var total = (+num1) / (+num2); 
-  //res.send('Hello World!');
-    res.send('The answer is: '+total)
+    res.setHeader('Content-Type', 'application/json');
+    res.end ( JSON.stringify({Total: total}));
 })
 
 app.listen(3003, function () {
